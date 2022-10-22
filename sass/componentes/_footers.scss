@@ -1,0 +1,93 @@
+.footer{
+    height: 200px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-claro;
+    a{
+        color: $color-claro;
+    }
+    &__contac{
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h4{
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        div{
+            text-align: center;
+            width: 100%;
+        }
+        i{
+            font-size: 25px;
+            margin-left: 3%;
+        }
+        .linke:hover{
+            color: #026eaa;
+        }
+        .github:hover{
+            color: #0c6edb;
+        }
+        .insta:hover{
+            color: #df0031;
+        }
+    }
+    &__atributte{
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        h4{
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        p{
+            text-align: center;
+            align-self: center;
+            font-size: 8px;
+        }
+    }
+    &__copyrigth{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        cursor: default;
+        i{
+            margin-right: 10px;
+        }
+    }
+    @include media(tablet){
+        .footer__atributte{
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    @include media(desktop-s){
+        h4{
+            font-size: 1.5rem;
+        }
+        .footer__atributte{
+            p{
+                font-size: 14px;
+            }
+        }
+        .footer__copyrigth{
+            font-size: 13px;
+        }
+    }
+}

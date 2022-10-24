@@ -27,6 +27,7 @@ colocar un addEventListener de tipo click
 que ejecute la funcion dirigir */
 enlaces.forEach(enlace => {
     enlace.addEventListener('click', dirigir);
+    enlace.addEventListener('click', ocultarMenu);
 });
 
 enlacesDesktop.forEach(enlace => {
@@ -49,6 +50,18 @@ function dirigir (e) {
         behavior: "smooth"
     });
 };
+
+/* funcion que oculta el menu luego de darle click al boton de enlace */
+function ocultarMenu (e) {
+    const identificador = e.target.href;
+    if (identificador == identificador) {
+        iconMenuRigth.style.opacity = "1";
+        iconMenuLeft.style.opacity = "0";
+        containerMenu.style.right = "-205px";
+        stateMenu = true;
+    };
+};
+
 
 
 

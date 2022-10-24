@@ -230,6 +230,7 @@ body {
 }
 .main__skills h2 {
   font-size: "Archivo Black", sans-serif;
+  padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
 }

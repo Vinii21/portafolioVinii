@@ -1,4 +1,4 @@
-import { consulta } from './firebase.js';
+import { consulta } from './firebase/firebase.js';
 const contenedorProyectos = document.getElementById('contenedor-proyectos');
 
 window.addEventListener('DOMContentLoaded', async () => {

@@ -135,8 +135,9 @@
                 .projectCard--info{
                     transition: all ease .5s;
                     top: 200px;
-                    backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
+                    background-color: rgba(0,0,0, 0.6);
+                    backdrop-filter: blur(3px);
+                    -webkit-backdrop-filter: blur(3px);
                     .iconLinks{
                         background-color: transparent;
                         backdrop-filter: blur(0px);

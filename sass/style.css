@@ -360,8 +360,9 @@ body {
   .main__portafolio .container__projects .projectCard--info {
     transition: all ease 0.5s;
     top: 200px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
   .main__portafolio .container__projects .projectCard--info .iconLinks {
     background-color: transparent;

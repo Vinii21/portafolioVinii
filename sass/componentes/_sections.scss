@@ -33,16 +33,19 @@
             padding: 10px;
             margin-bottom: 10px;
             box-shadow: 3px 4px 10px 0px rgba($color-oscuro,.5);
-            color: $color-oscuro;
             border: none;
             background-color: $color-claro;
             border-radius: 10px;
             cursor: pointer;
-            transition: all ease 0.6s;
+            transition: all ease 0.1s;
+            border: 3px solid transparent;
             &:hover{
-                color: $color-claro;
-                background-color: $color-oscuro;
-                box-shadow: 3px 4px 5px 0px rgba($color-oscuro,.5);
+                box-shadow: 0px 2px 7px 8px rgba($color-oscuro,.5);
+                border: 3px solid $color-secundario;
+            }
+            a{
+                color: $color-oscuro;
+                text-decoration: none;
             }
         }
     }
@@ -90,7 +93,9 @@
                     flex-direction: column;
                     justify-content: space-around;
                     align-items: center;
-                    background-color: rgba(0,0,0, 0.3);
+                    background-color: rgba(0,0,0, 0.5);
+                    backdrop-filter: blur(1px);
+                    -webkit-backdrop-filter: blur(1px);
                     border-radius: 12px;
                     h3{
                         color: #fff;
@@ -107,7 +112,7 @@
                     .iconLinks{
                         width: 100%;
                         height: auto;
-                        background-color: rgba($color-claro, 0.1);
+                        background-color: rgba(#fff, 0.1);
                         backdrop-filter: blur(10px);
                         -webkit-backdrop-filter: blur(10px);
     

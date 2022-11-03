@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded', async () => {
                         })}
                     </ul>
                     <div class="iconLinks">
-                        <a href=${proyecto.link_project}><i class="bi bi-arrow-up-right-square-fill"></i></a>
-                        <a href=${proyecto.link_code}><i class="bi bi-github"></i></a>
+                        <a href=${proyecto.link_project} target="_blank"><i class="bi bi-arrow-up-right-square-fill"></i></a>
+                        <a href=${proyecto.link_code} target="_blank"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>

@@ -3,8 +3,8 @@ const iconMenuRigth = document.getElementById('iconRigth');
 const containerMenu = document.getElementById('NavResponsive');
 let stateMenu = true;
 //Obtencion de cada uno de los enlaces en el menu responsive
-const enlaces = document.querySelectorAll('.containerNav a');
-const enlacesDesktop = document.querySelectorAll('.header__containerNav--nav a');
+const enlaces = document.querySelectorAll('.containerNav .enlace-movil');
+const enlacesDesktop = document.querySelectorAll('.header__containerNav--nav .enlace-descktop');
 
 /* Logica para mostrar y esconder el menu responsive
 basandose en la variable stateMenu */

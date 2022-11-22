@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <script src="./js/page.js"></script> 
 </head>
 <body>
     <header class="header">
@@ -24,19 +25,19 @@
             <i id="iconLeft" class="bi bi-text-left on"></i>
             <i id="iconRigth" class="bi bi-text-right off"></i>
             <nav class="header__containerNav--nav">
-                <a href="#skill">Herramientas</a>
-                <a href="#project">Proyectos</a>
-                <a href="#contac">Contacto</a>
-                <a target="_blank" href="./views/estudios.html">Estudios</a>
+                <a class="enlace-descktop" href="#skill">Herramientas</a>
+                <a class="enlace-descktop" href="#project">Proyectos</a>
+                <a class="enlace-descktop" href="#contac">Contacto</a>
+                <!-- <a href="./views/estudios.html">Estudios</a> -->
             </nav>
         </div>
     </header>
     <div id="NavResponsive" class="containerNav">
         <div class="containerNav__enlaces">
-            <a href="#skill">Herramientas</a>
-            <a href="#project">Proyectos</a>
-            <a href="#contac">Contacto</a>
-            <a target="_blank" href="./views/estudios.html">Estudios</a>
+            <a class="enlace-movil" href="#skill">Herramientas</a>
+            <a class="enlace-movil" href="#project">Proyectos</a>
+            <a class="enlace-movil" href="#contac">Contacto</a>
+            <!-- <a href="./views/estudios.html">Estudios</a> -->
         </div>
     </div>
     <div class="hero">
@@ -62,7 +63,7 @@
                     <!-- <img src="./assets/svg/npm.svg" alt="npm skill"> -->
                     <img src="./assets/icon/012-figma.png" alt="Figma skill">
                 </div>
-                <button id="cv"><a href="./license/Curriculum-Vitae.pdf" target="_blank">Descargar CV</a></button>
+                <button id="cv"><a href="./license/CV.pdf" target="_blank">Ver Curriculum</a></button>
         </section>
         <section id="project" class="main__portafolio">
             <h2>Proyectos</h2>

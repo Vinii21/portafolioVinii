@@ -39,4 +39,46 @@
         50% {background-color: rgba(#611d79,0.6);}
         100% {background-color: rgba(#401648,0.6);}
     }
+    &__iSelft{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        .profile{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            img{
+                border-radius: 50%;
+                width: 150px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .contact{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            padding-right: 10px;
+            a{
+                color: $color-claro;
+               font-size: 30px;
+               margin: 0 10px;
+            }
+            .linke:hover{
+                color: #026eaa;
+            }
+            .github:hover{
+                color: #0c6edb;
+            }
+            .insta:hover{
+                color: #df0031;
+            }
+        }
+    }
 }

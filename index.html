@@ -1,110 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViniDev / Portafolio</title>
-    <link rel="shortcut icon" href="./assets/icon/icons8-developer-60.png" type="image/x-icon">
-    <link rel="stylesheet" href="./sass/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
-    <script src="./js/page.js"></script> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./assets/img/viniLogo.svg" type="image/x-icon">
+    <meta name="author" content="Marcelo Vinicio Chavarria Ugalde">
+    <meta name="description" content="Desarrollador Frontend con sede en Costa Rica, portafolio de proyectos">
+    <link href="./assets/css/aos.css" rel="stylesheet">
+    <title>Vinicio Chavarría</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
+    <div id="particles-js"></div>
     <header class="header">
-        <div class="header__containerLogo">
-            <img src="./assets/icon/014-lenguaje-html.png" alt="Miniatura de ViniDev" title="ViniDev"/>
+        <div class="header__image--container">
+            <a href="#main"><img src="./assets/img/viniLogo.svg" alt="logo" width="100"></a>
         </div>
-        <div class="header__containerTitle">
-            <p>Front-end</p>
-        </div>
-        <div class="header__containerNav">
-            <i id="iconLeft" class="bi bi-text-left on"></i>
-            <i id="iconRigth" class="bi bi-text-right off"></i>
-            <nav class="header__containerNav--nav">
-                <a class="enlace-descktop" href="#skill">Herramientas</a>
-                <a class="enlace-descktop" href="#project">Proyectos</a>
-                <a class="enlace-descktop" href="#contac">Contacto</a>
-                <!-- <a href="./views/estudios.html">Estudios</a> -->
-            </nav>
-        </div>
+        <div class="header__icon--menu"><a href="#nav"><i class='bx bx-menu'></i></a></div>
+        <nav id="nav" class="header__nav">
+                <div class="close"><a href="#close"><i class='bx bx-x'></i></a></i></div>
+                <a class="header__nav--link" href="#about">Sobre mí</a>
+                <a class="header__nav--link" href="#projects">Portafolio</a>
+                <a class="header__nav--link" href="#contact">Contacto</a>
+        </nav>
     </header>
-    <div id="NavResponsive" class="containerNav">
-        <div class="containerNav__enlaces">
-            <a class="enlace-movil" href="#skill">Herramientas</a>
-            <a class="enlace-movil" href="#project">Proyectos</a>
-            <a class="enlace-movil" href="#contac">Contacto</a>
-            <!-- <a href="./views/estudios.html">Estudios</a> -->
-        </div>
-    </div>
-    <div class="hero">
-        <div class="hero__containerTitle">
-            <h1>Soy Vinicio Chavarria <br> Desarrollador Web Front-End</h1>
-            <!-- <p>Especializado en JavaScript y React Js</p> -->
-        </div>
-        <div class="hero__iSelft">
-            <div class="profile">
-                <img src="./assets/img/photoVi.jpg" width="100" alt="Foto de Vinicio Chavarria">
-            </div>
-            <div class="contact">
-                    <a class="linke" target="_blank" href="https://www.linkedin.com/in/vinicio-chavarria-369b18133"><i class="bi bi-linkedin"></i></a>
-                    <a class="github" target="_blank" href="https://github.com/Vinii21"><i class="bi bi-github"></i></a>
-                    <a class="insta" target="_blank" href="https://www.instagram.com/j.k.noe/"><i class="bi bi-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    <main id="skill" class="main">
-        <section class="main__skills">
-                <h2>Herramientas</h2>
-                <div class="containerSkills">
-                    <img src="./assets/icon/002-html.png" alt="HTML skill">
-                    <img src="./assets/icon/005-css-3.png" alt="CSS skill">
-                    <img src="./assets/icon/009-bootstrap.png" alt="BOOTSTARP skill">
-                    <img src="./assets/icon/001-sass.png" alt="SASS skill">
-                    <img src="./assets/icon/007-js.png" alt="JavaScript skill">
-                    <!-- <img src="./assets/icon/011-mysql.png" alt="MySQL skill"> -->
-                    <img width="100" src="./assets/icon/angular.png" alt="Angular Skill">
-                    <img src="./assets/icon/008-react.png" alt="Reactjs skill">
-                    <img src="./assets/icon/011-firabase.png" alt="Firabase skill">
-                    <img src="./assets/icon/010-git.png" alt="git skill">
-                    <img src="./assets/icon/013-signo-de-github.png" alt="gitHub skill">
-                    <!-- <img src="./assets/svg/npm.svg" alt="npm skill"> -->
-                    <img src="./assets/icon/012-figma.png" alt="Figma skill">
+    <main class="main" id="main">
+        <!-- HOME -->
+        <section class="home">
+            <div class="home__container">
+                <div data-aos="fade-down" data-aos-duration="1000" class="home__img--container">
+                    <img class="home__img--img" src="./assets/img/profile1.png">
                 </div>
-                <button id="cv"><a href="https://www.canva.com/design/DAFSml2NN2c/XZSNqKr4XR6i8Y4UPkGdTA/view?utm_content=DAFSml2NN2c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Ver Curriculum</a></button>
-        </section>
-        <section id="project" class="main__portafolio">
-            <h2>Proyectos</h2>
-            <div class="container__projects" id="contenedor-proyectos">
-                <!-- Datos cargados desde db -->
+                <div class="home__info">
+                    <div class="home__info--container">
+                        <h1 class="home__info--title" data-aos="fade-right" data-aos-duration="1000">Hola, soy Vinicio Chavarría. Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
+                        <p class="home__info--description" data-aos="fade-left" data-aos-duration="1000">Entusiasta de la programación y el desarrollo de software para la web, enfocado en el diseño frontend.</p>
+                    </div>
+                    <div class="home__buttons">
+                        <a href="./assets/pdf/viniCv.pdf" download="Vinicio Chavarria CV"><button class="btn">Descargar CV</button></a>
+                        <div class="home__buttons--social">
+                            <a href="https://www.linkedin.com/in/vinicio-chavarria-369b18133/" target="_blank" class="icon"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="https://www.instagram.com/o_chavarria21/" target="_blank" class="icon"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="https://wa.me/50672548544" target="_blank" class="icon"><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- ABOUT ME -->
+        <section id="about"  class="about section" data-aos="fade-down-right" data-offset="200" data-aos-duration="1000">
+            <div class="about__container">
+                <h2 class="about__title">Acerca de Mi</h2>
+                <p class="about__description">Desarrollo sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Móvil primero).
+                    Me gusta mucho la estética de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible.
+                    Tengo experiencia con HTML, CSS, JavaScript, React JS y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer.</p>
+            </div>
+            <div class="about__skills">
+               <div class="about__cards">
+                    <!-- card 1 -->
+                    <div class="about__card">
+                        <img src="./assets/img/HTML.svg" title="HTML5" alt="HTML">
+                    </div>
+                    <!-- card 2 -->
+                    <div class="about__card">
+                        <img src="./assets/img/css.svg" title="CSS3" alt="CSS">
+                    </div>
+                    <!-- card 3 -->
+                    <div class="about__card">
+                        <img src="./assets/img/js.svg" title="JavaScript" alt="JavaScript">
+                    </div>
+                    <!-- card 4 -->
+                    <div class="about__card">
+                        <img src="./assets/img/react.svg" title="React Js" alt="React Js">
+                    </div>
+               </div>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects" class="projects section">
+            <h2 class="projects__title">Proyectos Destacados</h2>
+            <div class="projects__container">
+                <!-- Projecto 1 -->
+                <div data-aos="fade-left" data-offset="200" data-aos-duration="2000" class="projects__project">
+                        <div class="projects__header">
+                            <h3 class="projects__name">Galletas de la Fortuna</h3>
+                            <p class="projects__skills">React CSS Mobile First</p>
+                            <div class="projects__image">
+                                <a href="https://main--famous-stardust-7ac88d.netlify.app/" target="_blank"><img src="./assets/imgProjects/cookie.png" alt="Imagen de proyecto galletas de la fortuna"></a>
+                            </div>
+                        </div>
+                        <div class="projects__info">
+                            <p class="projects__description">Diseño integro de una sola página que muestra una frase distinta al interactuar con el botón "Descubre Otra Frase", diseño responsivo. Estilado con CSS3 y dividio en componentes que se renderizan de manera dínamica respecto a la iteracción del usuario.</p>
+                            <a href="https://github.com/Vinii21/fortune_cookies" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
+                        </div>
+                </div>
+                <!-- Projecto 2 -->
+                <div data-aos="fade-right" data-offset="200" data-aos-duration="2000" class="projects__project">
+                        <div class="projects__header">
+                            <h3 class="projects__name">Rick and Morty con React</h3>
+                            <p class="projects__skills">CSS Mobile First</p>
+                            <div class="projects__image">
+                               <a href="https://main--lucky-macaron-2c4915.netlify.app/" target="_blank"><img src="./assets/img/morthy.png" alt="Imagen de proyecto API Rick and Morty"></a>
+                            </div>
+                        </div>
+                        <div class="projects__info">
+                            <p class="projects__description">Loader de carga inicial. Búsqueda de locaciones mediante input para listar los personajes que habitan dicha locación. Cuadro informativo para mostrar las caracteristicas de cada universo. Páginación dinámica de acuerdo a la cantidad de personajes en cada locación.</p>
+                            <a href="https://github.com/Vinii21/universeRickApi" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
+                        </div>
+                </div>
+                <!-- Projecto 3 -->
+                <div data-aos="fade-left" data-offset="200" data-aos-duration="2000" class="projects__project">
+                    <div class="projects__header">
+                        <h3 class="projects__name">CRUD con React</h3>
+                        <p class="projects__skills">HTML CSS</p>
+                        <div class="projects__image">
+                           <a href="https://main--sparkling-hummingbird-53b39a.netlify.app/" target="_blank"><img src="./assets/img/crud.png" alt="Imagen de proyecto CRUD"></a>
+                        </div>
+                    </div>
+                    <div class="projects__info">
+                        <p class="projects__description">Diseño de la interfaz intuitivo con ligeros efectos mediante CSS. Consumo de API de productos para agregar, eliminar, actualizar y leer productos.</p>
+                        <a href="https://github.com/Vinii21/apiProducts" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <!-- Projecto 4 -->
+                <div data-aos="fade-right" data-offset="200" data-aos-duration="2000" class="projects__project">
+                    <div class="projects__header">
+                        <h3 class="projects__name">Pokedex con React</h3>
+                        <p class="projects__skills">CSS Mobile First</p>
+                        <div class="projects__image">
+                           <a href="https://pokedexapirlv.netlify.app/" target="_blank"><img src="./assets/img/poke.png" alt="Imagen de proyecto pokeAPI"></a>
+                        </div>
+                    </div>
+                    <div class="projects__info">
+                        <p class="projects__description">Diseño de la interfaz adaptado a distintas pantallas (Mobile Firts). Acceso con rutas protegidas, capacidad de configurar modo oscuro, actualizar nombre y cantidad de pokemones a mostrar. Este proyecto lo realice en colaborativo, información de los colegas en el apartado de configuración del proyecto.</p>
+                        <a href="https://github.com/Vinii21/ApiPokedex" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <!-- Projecto 5 -->
+                <div data-aos="fade-left" data-offset="200" data-aos-duration="2000" class="projects__project">
+                    <div class="projects__header">
+                        <h3 class="projects__name">Ecommerce con React</h3>
+                        <p class="projects__skills">Axios CSS Mobile First</p>
+                        <div class="projects__image">
+                           <a href="https://e-commercereactapp.netlify.app/" target="_blank"><img src="./assets/img/eCommerce.png" alt="Imagen de proyecto eCommerce"></a>
+                        </div>
+                    </div>
+                    <div class="projects__info">
+                        <p class="projects__description">Sistema de login mediante token único para cada usuario que se registre. Diseño intuitivo y minimalista. Filtrado de productos por precio, categoría y palabras. Este proyecto lo realice en colaborativo, información de los colegas en el footer del proyecto</p>
+                        <a href="https://github.com/Vinii21/e-comerce" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact" class="contact section">
+            <div class="contact__container" data-aos="flip-up" data-offset="200" data-aos-duration="1000">
+                <div class="contact__info">
+                    <h3 class="contact__info--title">Contacto</h3>
+                    <p class="contact__info--description">Soy muy accesible y estaría encantado de conversar contigo. Sientase libre de escribirme al WhatsApp o enviarme un mensaje a mi correo electronico. O bien puedes llenar el formulario para enviarme tú consulta.</p>
+                    <div class="contact__info--social">
+                        <a href="https://wa.me/50672548544" target="_blank" class="icon"><i class='bx bxl-whatsapp'></i>506 7254-8544</a>
+                        <a href="mailto:viniciochavarria27@gmail.com" id="mail" class="icon"><i class='bx bx-envelope'></i>viniciochavarria27 - @gmail</a>
+                    </div>
+                </div>
+                <div class="contact__form--container">
+                    <h3>Enviame un mensaje</h3>
+                    <form id="form" class="contact__form">
+                        <input class="contact__form--input" type="text" name="name" id="name" placeholder="Nombre">
+                        <input class="contact__form--input" type="email" name="email" id="email" placeholder="Email">
+                        <input class="contact__form--input" type="text" name="subject" id="subject" placeholder="Asunto">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button class="btn" type="submit">Enviar</button>
+                    </form>
+                    <div id="alert" class="contact__form--alert"><button id="close">❌</button><p>Por favor rellene todos los campos</p></div>
+                </div>
         </section>
     </main>
-    <footer id="contac" class="footer">
-        <div class="footer__contac">
-            <h4>Contacto</h4>
-            <div>
-                <a class="linke" target="_blank" href="https://www.linkedin.com/in/vinicio-chavarria-369b18133"><i class="bi bi-linkedin"></i></a>
-                <a class="github" target="_blank" href="https://github.com/Vinii21"><i class="bi bi-github"></i></a>
-                <a class="insta" target="_blank" href="https://www.instagram.com/j.k.noe/"><i class="bi bi-instagram"></i></a>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="https://github.com/Vinii21" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/vinicio-chavarria-369b18133/" target="_blank" class="icon"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.instagram.com/vinicio_chavarria/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+            <div class="footer__logo">
+                <img src="./assets/img/viniLogo.svg" alt="">
+            </div>
+            <div class="footer__nav">
+                <a href="#about">Acerca de mi</a>
+                <a href="#projects">Portafolio</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="footer__copyrigth">
+                <span>&copy Vinicio Chavarria | 2023</span>
             </div>
         </div>
-        <div class="footer__atributte">
-            <h4>Atribuciones</h4>
-            <p>Agradecimientos a <a target="_blank" href="https://icons8.com">Icons8</a> por <a target="_blank" href="https://icons8.com/icon/24895/ngp">NGP</a></p>
-            <p>Agradecimientos a <a href="./license/license.html" target="_blank">Flaticon</a></p>
-        </div>
-        <div class="footer__copyrigth">
-            <p><i class="bi bi-c-circle-fill"></i>Creado por Vinicio Chavarria | 2022</p>
-        </div>
     </footer>
-
-    <script type="module" src="./index.js"></script>
-    <script type="module" src="./js/sections.js"></script>
-    <script src="./js/headers.js"></script>
-    <script src="./js/btnCV.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/particlesConfing.js"></script>
+    <script src="./assets/js/sendForm.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

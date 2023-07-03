@@ -11,10 +11,9 @@
     <link href="./assets/css/aos.css" rel="stylesheet">
     <title>Vinicio Chavarría</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/swipper.css">
 </head>
 <body>
     <div id="particles-js"></div>
@@ -34,13 +33,10 @@
         <!-- HOME -->
         <section class="home">
             <div class="home__container">
-                <div data-aos="fade-down" data-aos-duration="1000" class="home__img--container">
-                    <img class="home__img--img" src="./assets/img/profile1.png">
-                </div>
                 <div class="home__info">
                     <div class="home__info--container">
-                        <h1 class="home__info--title" data-aos="fade-right" data-aos-duration="1000">Hola, soy Vinicio Chavarría. Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
-                        <p class="home__info--description" data-aos="fade-left" data-aos-duration="1000">Entusiasta de la programación y el desarrollo de software para la web, enfocado en el diseño frontend.</p>
+                        <h1 class="home__info--title" data-aos="fade-right" data-aos-duration="1000">Hola, soy Vinicio Chavarría. Desarrollador Web FullStack <span>con sede en Costa Rica.</span></h1>
+                        <p class="home__info--description" data-aos="fade-left" data-aos-duration="1000">Entusiasta de la programación y el desarrollo de software para la web.</p>
                     </div>
                     <div class="home__buttons">
                         <a href="./assets/pdf/viniCv.pdf" download="Vinicio Chavarria CV"><button class="btn">Descargar CV</button></a>
@@ -80,6 +76,30 @@
                         <img src="./assets/img/react.svg" title="React Js" alt="React Js">
                     </div>
                </div>
+            </div>
+        </section>
+        <section id="development_projects" class="developmentProjects">
+            <div class="developmentProjects--container">
+                <h2>Proyectos en Desarrollo</h2>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-content">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </div>
         </section>
         <!-- PROJECTS -->
@@ -216,6 +236,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swipperInit.js"></script>
     <script src="./assets/js/particles.min.js"></script>
     <script src="./assets/js/particlesConfing.js"></script>
     <script src="./assets/js/sendForm.js"></script>
